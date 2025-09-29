@@ -12,7 +12,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="nav-logo">
         <img src={logo} alt="" height="50px" />
-        <p>Johar Jharkhand</p>
+        <p>Johar Shop</p>
       </div>
       <ul className="nav-menu">
         <li
@@ -20,7 +20,7 @@ const Navbar = () => {
             setMenu("home");
           }}
         >
-          <Link style={{ textDecoration: "none", color: "#626262" }} to="/">
+          <Link style={{ textDecoration: "none", color: "white" }} to="/">
             Home
           </Link>
           {menu === "home" ? <hr /> : <></>}
@@ -30,7 +30,7 @@ const Navbar = () => {
             setMenu("mens");
           }}
         >
-          <Link style={{ textDecoration: "none", color: "#626262" }} to="/mens">
+          <Link style={{ textDecoration: "none", color: "white" }} to="/mens">
             Men
           </Link>
           {menu === "mens" ? <hr /> : <></>}
@@ -41,7 +41,7 @@ const Navbar = () => {
           }}
         >
           <Link
-            style={{ textDecoration: "none", color: "#626262" }}
+            style={{ textDecoration: "none", color: "white" }}
             to="/womens"
           >
             Women
@@ -53,7 +53,7 @@ const Navbar = () => {
             setMenu("kids");
           }}
         >
-          <Link style={{ textDecoration: "none", color: "#626262" }} to="/kids">
+          <Link style={{ textDecoration: "none", color: "white" }} to="/kids">
             Kids
           </Link>
           {menu === "kids" ? <hr /> : <></>}
@@ -65,7 +65,7 @@ const Navbar = () => {
           <button>Login</button>
         </Link>
         <Link to="/cart">
-          <img src={cart_icon} alt="" height="40px" />
+          <img src={cart_icon} alt="" background="white" height="40px" />
         </Link>
         <div className="nav-cart-count">{getTotalCartItems()}</div>
       </div>
